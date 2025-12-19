@@ -69,7 +69,7 @@ patterns_seen = set()
 re_int = re.compile(r'/\d+([?/]|$)')
 
 ext_list = tuple(clean_nargs(args.blacklist)) if args.blacklist else tuple(('css', 'png', 'jpg', 'jpeg', 'svg',
-	'ico','webp', 'scss','tif','tiff','ttf','otf','woff','woff2', 'gif',
+	'ico','webp', 'scss','tif','tiff','ttf','otf', 'js', 'woff','woff2', 'gif',
 	'pdf', 'bmp', 'eot', 'mp3', 'mp4', 'avi'
 ))
 
@@ -173,3 +173,4 @@ def main():
 					print(host + path + dict_to_params(param))
 			else:
 				print(host + path)
+
